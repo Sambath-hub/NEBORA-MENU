@@ -32,7 +32,7 @@ export default function App() {
     { name: 'Instagram', icon: <Instagram size={14} />, href: 'https://www.instagram.com/nebora_7/?hl=en' },
     { name: 'TikTok', icon: <Music2 size={14} />, href: 'https://www.tiktok.com/@nebora01' },
     { name: 'Facebook', icon: <Facebook size={14} />, href: 'https://www.facebook.com/profile.php?id=61563570357719' },
-    { name: 'Telegram', icon: <Send size={14} />, href: 'https://web.telegram.org/a/#1892919069' },
+    { name: 'Telegram', icon: <Send size={14} />, href: 'https://t.me/Monyneath_chan' },
   ];
 
   // Wheel Scroll Navigation
