@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Times New Roman", Times, serif;
+  --font-sans: "Helvetica Neue", Arial, sans-serif;
+  
+  --color-brand-bg: #08080a;
+  --color-brand-text: #e0d5c5;
+  --color-gold: #d4af37;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-bg text-brand-text overflow-hidden selection:bg-gold selection:text-black;
+  }
+}
+
+.gold-glow {
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
+}
+
+.brand-text-shadow {
+  text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+}
+
