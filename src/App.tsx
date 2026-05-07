@@ -153,12 +153,18 @@ export default function App() {
                   {/* Product Photo Background */}
                   <div className="absolute inset-0 z-0">
                     <img 
-                      src={`https://picsum.photos/seed/${product.imageSeed}/600/800?grayscale&blur=2`}
+                      src={product.imageUrl || `https://picsum.photos/seed/${product.imageSeed}/600/800`}
                       alt={product.name}
                       referrerPolicy="no-referrer"
-                      className="w-full h-full object-cover opacity-10 group-hover:opacity-20 transition-opacity duration-500"
+                      className={cn(
+                        "w-full h-full object-cover transition-opacity duration-500",
+                        isActive ? "opacity-75" : (product.imageUrl ? "opacity-30 group-hover:opacity-50" : "opacity-15 group-hover:opacity-30")
+                      )}
                     />
-                    <div className="absolute inset-0 bg-linear-to-t from-brand-bg via-transparent to-transparent" />
+                    <div className={cn(
+                      "absolute inset-0 bg-linear-to-t from-brand-bg transition-opacity duration-500",
+                      isActive ? "opacity-40" : "opacity-70"
+                    )} />
                   </div>
 
                   <div className="relative z-10 w-full h-full p-8 flex flex-col justify-between">
@@ -280,11 +286,11 @@ export default function App() {
 
               <div className="relative aspect-square bg-[#0a0a0a] border border-gold/5 flex items-center justify-center overflow-hidden">
                  <img 
-                    src={`https://picsum.photos/seed/${activeProduct.imageSeed}/800/800?grayscale`}
+                    src={activeProduct.imageUrl || `https://picsum.photos/seed/${activeProduct.imageSeed}/800/800`}
                     alt={activeProduct.name}
-                    className="w-full h-full object-cover opacity-40"
+                    className="w-full h-full object-cover opacity-50"
                   />
-                  <div className="absolute inset-0 bg-linear-to-t from-brand-bg/80 to-transparent" />
+                  <div className="absolute inset-0 bg-linear-to-t from-brand-bg/90 to-transparent" />
               </div>
 
               <div className="space-y-8 flex flex-col justify-center">

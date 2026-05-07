@@ -5,18 +5,46 @@ export interface Product {
   notesData: string[];
   color: string;
   accentColor: string;
-  imageSeed: string; // Used for picsum seed
+  imageUrl?: string;
+  imageSeed?: string;
 }
 
 export const PRODUCTS: Product[] = [
   {
+    id: "amore",
+    name: "Amore",
+    description: "A soft, romantic embrace of sweet cream and blushing pink heart-shaped wax pieces. Hand-poured for a cozy, intimate atmosphere that feels like a gentle hug.",
+    notesData: ["Sweet Cream", "Rose Petals", "Vanilla Bean"],
+    color: "#ffc0cb",
+    accentColor: "rgba(255, 192, 203, 0.2)",
+    imageUrl: "https://i.pinimg.com/736x/05/4f/21/054f215dea5edd0cab81b42c1d798ba8.jpg"
+  },
+  {
     id: "solstice",
-    name: "Solstice",
-    description: "Capturing the golden warmth of the longest day. A grounding blend of sun-drenched amber and bright citrus.",
-    notesData: ["Amber", "Bergamot", "Sandalwood"],
-    color: "#ff8c00",
-    accentColor: "rgba(255, 140, 0, 0.2)",
-    imageSeed: "sun-candle"
+    name: "Romdoul Flower",
+    description: "The warmth of Cambodian traditions. Artisanal terracotta pots holding vibrant yellow floral blooms that capture the essence of the golden sun.",
+    notesData: ["Turmeric", "Wild Jasmine", "Terracotta"],
+    color: "#eab308",
+    accentColor: "rgba(234, 179, 8, 0.2)",
+    imageUrl: "https://i.pinimg.com/736x/21/6b/09/216b092f6914faecbb7be215c1f02397.jpg"
+  },
+  {
+    id: "lotus",
+    name: "Royal Princess",
+    description: "Regal and refined. Bright pink lotus blossoms nestled in ornate golden bowls, presented in a clear exhibition of Cambodian luxury and craft.",
+    notesData: ["Lotus Flower", "Sandalwood", "Gold Foil"],
+    color: "#db2777",
+    accentColor: "rgba(212, 175, 55, 0.3)",
+    imageUrl: "https://i1-c.pinimg.com/1200x/82/38/c4/8238c4dbec1b1674a83c6862e2fd630a.jpg"
+  },
+  {
+    id: "ruby-vibe",
+    name: "Ruby Vibe",
+    description: "A vibrant celebration of the senses. Rich ruby-red wax in elegant cocktail coupe glasses, finished with a creamy foam and a sweet heart topping.",
+    notesData: ["Pomegranate", "Pink Champagne", "White Musk"],
+    color: "#be123c",
+    accentColor: "rgba(190, 18, 60, 0.2)",
+    imageUrl: "https://i.pinimg.com/736x/bc/0e/53/bc0e53fbbdb73c50c3b810afc070d285.jpg"
   },
   {
     id: "lunar",
@@ -107,5 +135,14 @@ export const PRODUCTS: Product[] = [
     color: "#2dd4bf",
     accentColor: "rgba(45, 212, 191, 0.2)",
     imageSeed: "water-candle"
+  },
+  {
+    id: "seraphina",
+    name: "Gift Beloved Gen X&Y",
+    description: "A divine gift of pure pink peony and soft white amber. Elegant, airy, and celestial, designed to create a truly angelic atmosphere.",
+    notesData: ["Pink Peony", "White Amber", "Silk"],
+    color: "#f472b6",
+    accentColor: "rgba(244, 114, 182, 0.2)",
+    imageUrl: "https://i.pinimg.com/736x/c2/79/3d/c2793d1c29ddbaf0d66189557c0f0f4c.jpg"
   }
 ];
