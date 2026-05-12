@@ -158,12 +158,12 @@ export default function App() {
                       referrerPolicy="no-referrer"
                       className={cn(
                         "w-full h-full object-cover transition-opacity duration-500",
-                        isActive ? "opacity-75" : (product.imageUrl ? "opacity-30 group-hover:opacity-50" : "opacity-15 group-hover:opacity-30")
+                        isActive ? "opacity-100" : (product.imageUrl ? "opacity-80 group-hover:opacity-100" : "opacity-60 group-hover:opacity-80")
                       )}
                     />
                     <div className={cn(
-                      "absolute inset-0 bg-linear-to-t from-brand-bg transition-opacity duration-500",
-                      isActive ? "opacity-40" : "opacity-70"
+                      "absolute inset-0 bg-linear-to-t from-black/90 via-transparent to-transparent transition-opacity duration-500",
+                      isActive ? "opacity-60" : "opacity-40"
                     )} />
                   </div>
 
@@ -288,9 +288,9 @@ export default function App() {
                  <img 
                     src={activeProduct.imageUrl || `https://picsum.photos/seed/${activeProduct.imageSeed}/800/800`}
                     alt={activeProduct.name}
-                    className="w-full h-full object-cover opacity-50"
+                    className="w-full h-full object-cover opacity-100"
                   />
-                  <div className="absolute inset-0 bg-linear-to-t from-brand-bg/90 to-transparent" />
+                  <div className="absolute inset-0 bg-linear-to-t from-black/20 via-transparent to-transparent" />
               </div>
 
               <div className="space-y-8 flex flex-col justify-center">
@@ -406,7 +406,7 @@ export default function App() {
       </AnimatePresence>
 
       {/* Geometric Overlay */}
-      <div className="fixed top-0 right-0 w-[40%] h-full bg-linear-to-l from-black/40 to-transparent pointer-events-none z-[5]" />
+      <div className="fixed top-0 right-0 w-[40%] h-full bg-linear-to-l from-black/5 to-transparent pointer-events-none z-[5]" />
     </main>
   );
 }

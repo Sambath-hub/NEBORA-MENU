@@ -53,7 +53,7 @@ export const PRODUCTS: Product[] = [
     notesData: ["Lavender", "Moonflower", "White Musk"],
     color: "#a5b4fc",
     accentColor: "rgba(165, 180, 252, 0.2)",
-    imageSeed: "moon-candle"
+    imageUrl: "https://i.pinimg.com/736x/fc/a0/92/fca092d72b918898e62a04968d1a9041.jpg"
   },
   {
     id: "nebula",
@@ -62,7 +62,7 @@ export const PRODUCTS: Product[] = [
     notesData: ["Patchouli", "Cedar", "Star Anise"],
     color: "#c084fc",
     accentColor: "rgba(192, 132, 252, 0.2)",
-    imageSeed: "star-candle"
+    imageUrl: "https://i.pinimg.com/1200x/56/98/d9/5698d9221172145bf8469f0ad1b9f063.jpg"
   },
   {
     id: "ethereal",
@@ -71,7 +71,7 @@ export const PRODUCTS: Product[] = [
     notesData: ["Jasmine", "Vanilla", "Citrus Spark"],
     color: "#fdf2f8",
     accentColor: "rgba(253, 242, 248, 0.2)",
-    imageSeed: "cloud-candle"
+    imageUrl: "https://i.pinimg.com/1200x/e4/f5/bd/e4f5bd5a1931b76e7185d09306a0a5bc.jpg"
   },
   {
     id: "aurora",
@@ -80,7 +80,7 @@ export const PRODUCTS: Product[] = [
     notesData: ["Eucalyptus", "Wild Berry", "Pine"],
     color: "#4ade80",
     accentColor: "rgba(74, 222, 128, 0.2)",
-    imageSeed: "forest-candle"
+    imageUrl: "https://i.pinimg.com/1200x/44/e0/7b/44e07bd5d4ba35fc8ce8ec938c74c4ab.jpg"
   },
   {
     id: "zenith",
@@ -89,7 +89,7 @@ export const PRODUCTS: Product[] = [
     notesData: ["Ozone", "Wild Thyme", "Sage"],
     color: "#60a5fa",
     accentColor: "rgba(96, 165, 250, 0.2)",
-    imageSeed: "mountain-candle"
+    imageUrl: "https://i.pinimg.com/736x/ab/42/9a/ab429ac0c966dbb70c665503dbd06426.jpg"
   },
   {
     id: "eclipse",
@@ -98,7 +98,7 @@ export const PRODUCTS: Product[] = [
     notesData: ["Burnt Oud", "Jasmine", "Black Pepper"],
     color: "#4a4a4a",
     accentColor: "rgba(74, 74, 74, 0.2)",
-    imageSeed: "eclipse-candle"
+    imageUrl: "https://i.pinimg.com/736x/72/dd/94/72dd9459f526d0cc38dbf81b5673bf7b.jpg"
   },
   {
     id: "nova",
@@ -107,7 +107,7 @@ export const PRODUCTS: Product[] = [
     notesData: ["Blood Orange", "Pink Pepper", "Vetiver"],
     color: "#f87171",
     accentColor: "rgba(248, 113, 113, 0.2)",
-    imageSeed: "fire-candle"
+    imageUrl: "https://i.pinimg.com/736x/2d/94/5d/2d945dae56c69bd4c358b9a9eaac0c6b.jpg"
   },
   {
     id: "cosmos",
@@ -116,7 +116,7 @@ export const PRODUCTS: Product[] = [
     notesData: ["Star Fruit", "Galaxy Orchid", "Aldehydes"],
     color: "#818cf8",
     accentColor: "rgba(129, 140, 248, 0.2)",
-    imageSeed: "cosmos-candle"
+    imageUrl: "https://i.pinimg.com/736x/78/95/73/789573e7af8f4fafcb33aa14be2ea465.jpg"
   },
   {
     id: "terra",
@@ -125,7 +125,7 @@ export const PRODUCTS: Product[] = [
     notesData: ["Terracotta", "Oakmoss", "Sandalwood"],
     color: "#b45309",
     accentColor: "rgba(180, 83, 9, 0.2)",
-    imageSeed: "earth-candle"
+    imageUrl: "https://i.pinimg.com/1200x/00/e9/4a/00e94af17feadea80b977cd85ed7b8cb.jpg"
   },
   {
     id: "halcyon",
@@ -134,7 +134,7 @@ export const PRODUCTS: Product[] = [
     notesData: ["Ginger", "Bamboo", "Sea Salt"],
     color: "#2dd4bf",
     accentColor: "rgba(45, 212, 191, 0.2)",
-    imageSeed: "water-candle"
+    imageUrl: "https://scontent.fpnh5-4.fna.fbcdn.net/v/t39.30808-6/596000999_122178164072452345_7321929512573601696_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFE0Qsge6mKeUtO6Psxe3CwhNVcR1syuwWE1VxHWzK7BQe7INxmarWeAMp6-IZu5WOYLO632W248VugkVWNdFg7&_nc_ohc=aDO8eoRoOoYQ7kNvwFAf11f&_nc_oc=Adp0QHZi_IDR0kphC5MUewvd4By48aApz7UJm3EZrAnIVFr9TTElEZmRqs7K5VSzFi0&_nc_zt=23&_nc_ht=scontent.fpnh5-4.fna&_nc_gid=UJBXNr55MJjBIKXsmUjXnA&_nc_ss=7b2a8&oh=00_Af5ZHugPgCCc-UYMVcgOSaI2uhOG95PVUU1akRr7Q5N56Q&oe=6A0954A0"
   },
   {
     id: "seraphina",
