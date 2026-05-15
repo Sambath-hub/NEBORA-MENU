@@ -30,7 +30,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "lotus",
-    name: "Royal Princess",
+    name: "Royal Princess ⚜️",
     description: "Regal and refined. Bright pink lotus blossoms nestled in ornate golden bowls, presented in a clear exhibition of Cambodian luxury and craft.",
     notesData: ["Lotus Flower", "Sandalwood", "Gold Foil"],
     color: "#db2777",

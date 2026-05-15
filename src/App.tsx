@@ -167,7 +167,7 @@ export default function App() {
                     )} />
                   </div>
 
-                  <div className="relative z-10 w-full h-full p-8 flex flex-col justify-between">
+                  <div className="relative z-10 w-full h-full p-4 md:p-8 pt-6 md:pt-8 pb-1.5 md:pb-8 flex flex-col justify-between">
                     <div className="flex justify-between items-start">
                       <span className="text-[9px] font-serif italic text-gold/40 tracking-widest leading-none uppercase">Series № 0{index + 1}</span>
                       {isActive && (
@@ -179,12 +179,12 @@ export default function App() {
 
                     <div className="space-y-4">
                       <div className="text-center group-hover:translate-y-[-5px] transition-transform duration-500">
-                        <h2 className="text-2xl font-serif tracking-[0.15em] uppercase text-white mb-2">
+                        <h2 className="text-sm sm:text-base md:text-2xl font-serif tracking-[0.1em] md:tracking-[0.15em] uppercase text-white mb-1 md:mb-2">
                           {product.name}
                         </h2>
                         <div className="h-px w-6 bg-gold/20 mx-auto" />
                       </div>
-                      <p className="text-[8px] font-sans text-center leading-relaxed opacity-40 uppercase tracking-[0.4em]">
+                      <p className="text-[7px] md:text-[8px] font-sans text-center leading-relaxed opacity-40 uppercase tracking-[0.15em] md:tracking-[0.4em]">
                         {product.notesData.join(" • ")}
                       </p>
                     </div>
@@ -196,7 +196,7 @@ export default function App() {
         </motion.div>
 
         {/* Centered Luxury Navigation Arrows Under Product */}
-        <div className="flex gap-12 items-center z-30 pointer-events-auto">
+        <div className="flex gap-12 items-center z-30 pointer-events-auto mt-4 md:mt-0">
           <motion.button 
             whileHover={{ scale: 1.1, x: -5, borderColor: '#d4af37' }}
             whileTap={{ scale: 0.9 }}
