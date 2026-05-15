@@ -53,7 +53,7 @@ export const PRODUCTS: Product[] = [
     notesData: ["Lavender", "Moonflower", "White Musk"],
     color: "#a5b4fc",
     accentColor: "rgba(165, 180, 252, 0.2)",
-    imageUrl: "https://i.pinimg.com/736x/fc/a0/92/fca092d72b918898e62a04968d1a9041.jpg"
+    imageUrl: "https://i.pinimg.com/736x/d9/cf/9b/d9cf9b54d4537f40ee024eab347cc483.jpg"
   },
   {
     id: "nebula",
