@@ -268,13 +268,13 @@ export default function App() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[100] flex items-center justify-center p-6 bg-brand-bg/95 backdrop-blur-xl"
+            className="fixed inset-0 z-[100] flex items-center justify-center p-3 sm:p-6 bg-brand-bg/95 backdrop-blur-xl overflow-hidden"
           >
             <motion.div 
               initial={{ opacity: 0, scale: 0.95, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              className="w-full max-w-4xl bg-[#0a0a0a] border border-gold/10 p-6 md:p-12 relative grid md:grid-cols-2 gap-8 md:gap-12 max-h-[90vh] overflow-y-auto"
+              className="w-full max-w-4xl bg-[#0a0a0a] border border-gold/10 p-4 sm:p-6 md:p-12 relative grid md:grid-cols-2 gap-6 md:gap-12 max-h-[95vh] sm:max-h-[90vh] overflow-y-auto overflow-x-hidden"
             >
               <button 
                 onClick={() => setShowQuickLook(false)}
@@ -284,26 +284,27 @@ export default function App() {
                 <span className="text-[6px] md:text-[7px] font-sans uppercase tracking-widest opacity-40 group-hover:opacity-100">Close</span>
               </button>
 
-              <div className="relative aspect-square bg-[#0a0a0a] border border-gold/5 flex items-center justify-center overflow-hidden">
-                 <img 
-                    src={activeProduct.imageUrl || `https://picsum.photos/seed/${activeProduct.imageSeed}/800/800`}
-                    alt={activeProduct.name}
-                    className="w-full h-full object-cover opacity-100"
-                  />
-                  <div className="absolute inset-0 bg-linear-to-t from-black/20 via-transparent to-transparent" />
+              <div className="flex flex-col space-y-6">
+                <div className="relative aspect-square bg-[#0a0a0a] border border-gold/5 flex items-center justify-center overflow-hidden">
+                   <img 
+                      src={activeProduct.imageUrl || `https://picsum.photos/seed/${activeProduct.imageSeed}/800/800`}
+                      alt={activeProduct.name}
+                      className="w-full h-full object-cover opacity-100"
+                    />
+                    <div className="absolute inset-0 bg-linear-to-t from-black/20 via-transparent to-transparent" />
+                </div>
+
+                <p className="text-xs sm:text-sm font-sans tracking-wide leading-relaxed opacity-60 border-l border-gold/20 pl-4 py-1 italic">
+                   {activeProduct.description || `A masterclass in olfactory architecture. ${activeProduct.name} combines the raw intensity of nature with refined artisanal techniques to create a fragrance that lingers with intent.`}
+                </p>
               </div>
 
               <div className="space-y-8 flex flex-col justify-center">
                 <div className="space-y-2">
                   <span className="text-[10px] font-serif italic text-gold/40 tracking-widest">№ 0{activeIndex + 1}</span>
-                  <h2 className="text-5xl font-serif tracking-[0.2em] uppercase text-white">{activeProduct.name}</h2>
+                  <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif tracking-[0.1em] sm:tracking-[0.2em] uppercase text-white break-words pr-8">{activeProduct.name}</h2>
                   <div className="h-px w-12 bg-gold/40" />
                 </div>
-
-                <p className="text-sm font-sans tracking-wide leading-relaxed opacity-60">
-                   A masterclass in olfactory architecture. {activeProduct.name} combines the raw intensity of 
-                   nature with refined artisanal techniques to create a fragrance that lingers with intent.
-                </p>
 
                 <div className="grid grid-cols-2 gap-8">
                   <div className="space-y-2">
@@ -318,14 +319,17 @@ export default function App() {
                   </div>
                 </div>
 
-                <div className="pt-8 pt-4 border-t border-gold/10">
-                   <motion.button
+                <div className="pt-8 border-t border-gold/10">
+                   <motion.a
                     whileHover={{ scale: 1.02, backgroundColor: 'rgba(212, 175, 55, 0.1)' }}
                     whileTap={{ scale: 0.98 }}
-                    className="w-full py-4 border border-gold text-gold text-[10px] font-sans uppercase tracking-[0.4em]"
+                    className="block text-center w-full py-4 px-2 border border-gold text-gold text-[9px] sm:text-[10px] font-sans uppercase tracking-[0.15em] sm:tracking-[0.3em] md:tracking-[0.4em] break-words cursor-pointer"
+                    href="https://t.me/Monyneath_chan"
+                    target="_blank"
+                    rel="noopener noreferrer"
                    >
-                      Find Your Nearest Boutique
-                   </motion.button>
+                       Inbox Now 
+                   </motion.a>
                 </div>
               </div>
             </motion.div>

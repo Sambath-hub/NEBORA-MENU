@@ -75,7 +75,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "aurora",
-    name: "Aurora",
+    name: "Sweet Sip",
     description: "The vibrant dance of northern lights. Crisp eucalyptus mixed with the sweetness of wild forest berries.",
     notesData: ["Eucalyptus", "Wild Berry", "Pine"],
     color: "#4ade80",
@@ -84,7 +84,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "zenith",
-    name: "Zenith",
+    name: "Premium Vibe",
     description: "High altitude clarity. A sharp, invigorating blend of ozone and fresh mountain herbs.",
     notesData: ["Ozone", "Wild Thyme", "Sage"],
     color: "#60a5fa",
@@ -93,7 +93,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "eclipse",
-    name: "Eclipse",
+    name: "Shawty Cake",
     description: "The moment light fades into shadow. A deep, smoky fusion of burnt oud and midnight jasmine.",
     notesData: ["Burnt Oud", "Jasmine", "Black Pepper"],
     color: "#4a4a4a",
@@ -102,7 +102,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "nova",
-    name: "Nova",
+    name: "Shawty Scoop 🎀",
     description: "A sudden burst of radiant energy. Sparkling blood orange combined with the heat of pink peppercorn.",
     notesData: ["Blood Orange", "Pink Pepper", "Vetiver"],
     color: "#f87171",
@@ -111,7 +111,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "cosmos",
-    name: "Cosmos",
+    name: "Forever Bloom ✨",
     description: "The infinite reach of the universe. A balanced scent of star fruit, galaxy orchid, and clean aldehydes.",
     notesData: ["Star Fruit", "Galaxy Orchid", "Aldehydes"],
     color: "#818cf8",
@@ -120,7 +120,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "terra",
-    name: "Terra",
+    name: "Midnight Romance 🍷",
     description: "Rooted in the ancient earth. Warm terracotta mixed with damp moss and aged sandalwood.",
     notesData: ["Terracotta", "Oakmoss", "Sandalwood"],
     color: "#b45309",
@@ -129,12 +129,12 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "halcyon",
-    name: "Halcyon",
+    name: "Winter Glowy",
     description: "Perfectly peaceful waters. A calm aqueous note layered with white ginger and bamboo.",
     notesData: ["Ginger", "Bamboo", "Sea Salt"],
     color: "#2dd4bf",
     accentColor: "rgba(45, 212, 191, 0.2)",
-    imageUrl: "https://scontent.fpnh5-4.fna.fbcdn.net/v/t39.30808-6/596000999_122178164072452345_7321929512573601696_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFE0Qsge6mKeUtO6Psxe3CwhNVcR1syuwWE1VxHWzK7BQe7INxmarWeAMp6-IZu5WOYLO632W248VugkVWNdFg7&_nc_ohc=aDO8eoRoOoYQ7kNvwFAf11f&_nc_oc=Adp0QHZi_IDR0kphC5MUewvd4By48aApz7UJm3EZrAnIVFr9TTElEZmRqs7K5VSzFi0&_nc_zt=23&_nc_ht=scontent.fpnh5-4.fna&_nc_gid=UJBXNr55MJjBIKXsmUjXnA&_nc_ss=7b2a8&oh=00_Af5ZHugPgCCc-UYMVcgOSaI2uhOG95PVUU1akRr7Q5N56Q&oe=6A0954A0"
+    imageUrl: "https://i1-c.pinimg.com/1200x/70/73/31/707331d1b511aa56dd9747fc9e959b80.jpg"
   },
   {
     id: "seraphina",
